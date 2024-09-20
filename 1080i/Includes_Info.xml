@@ -2381,6 +2381,16 @@
                 <param name="visible">$PARAM[visible] + !String.IsEmpty($PARAM[container]ListItem.VideoVersionName)</param>
             </include>
 
+            <!-- AUDIO LANGUAGE -->
+            <include content="Info_Codecs_MonoIcon">
+                <param name="icon">$INFO[$PARAM[container]ListItem.Property(AudioLanguage.1),language/,.png]</param>
+                <param name="width">80</param>
+                <param name="iconwidth">80</param>
+                <param name="iconheight">48</param>
+                <param name="left">-16</param>
+                <param name="visible">$PARAM[visible] + !String.IsEmpty($PARAM[container]ListItem.Property(AudioLanguage.1))</param>
+            </include> 
+
         </definition>
     </include>
 
